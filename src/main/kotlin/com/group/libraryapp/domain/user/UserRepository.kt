@@ -7,6 +7,6 @@ import java.util.Optional
 interface UserRepository: JpaRepository<User, Long> {
     fun findByName(name: String): User?
 
-    @Query("select distinct u from User u join fetch u.userLoanHistories")
+    @Query("select distinct u from User u left join fetch u.userLoanHistories")
     fun findAllWithHistories(): List<User>
 }

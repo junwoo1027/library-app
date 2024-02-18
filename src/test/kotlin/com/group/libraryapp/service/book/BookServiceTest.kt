@@ -141,7 +141,6 @@ class BookServiceTest @Autowired constructor(
         val results = bookService.getBookStatistics()
 
         // then
-        println("aa" + results)
         assertThat(results).hasSize(3)
         assertCount(results, BookType.COMPUTER, 2L)
         assertCount(results, BookType.SCIENCE, 1L)
