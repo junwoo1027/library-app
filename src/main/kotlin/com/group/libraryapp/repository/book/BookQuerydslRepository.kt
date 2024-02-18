@@ -1,4 +1,4 @@
-package com.group.libraryapp.repository
+package com.group.libraryapp.repository.book
 
 import com.group.libraryapp.domain.book.QBook.book
 import com.group.libraryapp.dto.book.response.BookStatResponse
